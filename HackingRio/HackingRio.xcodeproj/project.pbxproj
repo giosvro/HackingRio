@@ -17,6 +17,9 @@
 		651BF03D210CD5CE0016C4A9 /* HackingRioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF03C210CD5CE0016C4A9 /* HackingRioTests.swift */; };
 		651BF048210CD5CE0016C4A9 /* HackingRioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */; };
 		881DFF0431D6B4F9B48F9716 /* Pods_HackingRioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99A837C685B3F8B9E210547 /* Pods_HackingRioTests.framework */; };
+		968189F8210CE73E00E6C7DC /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189F7210CE73E00E6C7DC /* Slot.swift */; };
+		968189FA210CE79E00E6C7DC /* Consult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189F9210CE79E00E6C7DC /* Consult.swift */; };
+		968189FC210CE7B100E6C7DC /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189FB210CE7B100E6C7DC /* Patient.swift */; };
 		D9C3415257AD6FE3610B7881 /* Pods_HackingRio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D17B1A55027C151666358F /* Pods_HackingRio.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		651BF049210CD5CE0016C4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D17B1A55027C151666358F /* Pods_HackingRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968189F7210CE73E00E6C7DC /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		968189F9210CE79E00E6C7DC /* Consult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consult.swift; sourceTree = "<group>"; };
+		968189FB210CE7B100E6C7DC /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		973CA1106071518925F6DE72 /* Pods-HackingRioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackingRioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackingRioTests/Pods-HackingRioTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3FF06C82D2D4FFE32F80F4D /* Pods-HackingRio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackingRio.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackingRio/Pods-HackingRio.release.xcconfig"; sourceTree = "<group>"; };
 		AB767C0ED229056D8DCCF4BC /* Pods-HackingRio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackingRio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackingRio/Pods-HackingRio.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				3B71E379210CE11900AD30AC /* Pessoa.swift */,
+				968189F7210CE73E00E6C7DC /* Slot.swift */,
+				968189F9210CE79E00E6C7DC /* Consult.swift */,
+				968189FB210CE7B100E6C7DC /* Patient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,8 +393,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				651BF02A210CD5CD0016C4A9 /* ViewController.swift in Sources */,
+				968189FA210CE79E00E6C7DC /* Consult.swift in Sources */,
 				3B71E37A210CE11900AD30AC /* Pessoa.swift in Sources */,
 				651BF028210CD5CD0016C4A9 /* AppDelegate.swift in Sources */,
+				968189F8210CE73E00E6C7DC /* Slot.swift in Sources */,
+				968189FC210CE7B100E6C7DC /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
