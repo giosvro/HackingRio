@@ -17,7 +17,7 @@ class Pessoa{
     var cpf : String
     
     
-    init(nome: String, nascimento : Date, telefone: String, email : String, publisher: String, isbn: String, cover: String, cpf: String){
+    init(nome: String, nascimento : Date, telefone: String, email : String, cpf: String){
         self.nome = nome
         self.nascimento = nascimento
         self.telefone = telefone

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05D41D715BD98CDFA3F32CD4 /* Pods_HackingRioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */; };
 		3B71E37A210CE11900AD30AC /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71E379210CE11900AD30AC /* Pessoa.swift */; };
+		3B71E37C210CE6CA00AD30AC /* Medico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71E37B210CE6CA00AD30AC /* Medico.swift */; };
 		651BF028210CD5CD0016C4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF027210CD5CD0016C4A9 /* AppDelegate.swift */; };
 		651BF02A210CD5CD0016C4A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF029210CD5CD0016C4A9 /* ViewController.swift */; };
 		651BF02D210CD5CD0016C4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651BF02B210CD5CD0016C4A9 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		1D314E82BA3A8096870AECF1 /* Pods-HackingRioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackingRioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackingRioUITests/Pods-HackingRioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		34115F1AF2708BC58276765C /* Pods-HackingRioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackingRioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackingRioTests/Pods-HackingRioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B71E379210CE11900AD30AC /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
+		3B71E37B210CE6CA00AD30AC /* Medico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medico.swift; sourceTree = "<group>"; };
 		41A7B82764177BEA4228685E /* Pods-HackingRioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackingRioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackingRioUITests/Pods-HackingRioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		651BF024210CD5CD0016C4A9 /* HackingRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackingRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BF027210CD5CD0016C4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3B71E379210CE11900AD30AC /* Pessoa.swift */,
+				3B71E37B210CE6CA00AD30AC /* Medico.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B71E37C210CE6CA00AD30AC /* Medico.swift in Sources */,
 				651BF02A210CD5CD0016C4A9 /* ViewController.swift in Sources */,
 				3B71E37A210CE11900AD30AC /* Pessoa.swift in Sources */,
 				651BF028210CD5CD0016C4A9 /* AppDelegate.swift in Sources */,
