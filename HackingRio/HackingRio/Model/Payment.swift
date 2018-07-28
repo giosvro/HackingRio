@@ -1,5 +1,5 @@
 //
-//  Consult.swift
+//  Payment.swift
 //  HackingRio
 //
 //  Created by Julia Maria Santos on 28/07/2018.
@@ -8,12 +8,10 @@
 
 import Foundation
 
-class Consult {
+class Payment: Codable {
     var patient: Patient
-    var slot: [Slot]
     
-    init(patient: Patient, slot: [Slot]) {
+    init(patient: Patient) {
         self.patient = patient
-        self.slot = slot
     }
 }
