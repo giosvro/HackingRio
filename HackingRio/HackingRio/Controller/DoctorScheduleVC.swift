@@ -11,17 +11,21 @@ import UIKit
 
 class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
 
-    var collectionView: UICollectionView!
+    var collectionView = UICollectionView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView = UICollectionView()
+//        collectionView = UICollectionView()
         
         //MARK: Collection View Layout
         let frame = CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.height)
         let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 354 , height: 90)
         collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         
-
+        collectionView.delegate   = self
+        collectionView.dataSource = self
+        collectionView.register(DoctorScheduleCell.self, forCellWithReuseIdentifier: "AppointmentItem")
+        self.view.addSubview(collectionView)
         
         //MARK: Collection View Constraints
         
@@ -53,5 +57,5 @@ class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollection
         
         return cell
     }
-    
+  
 }

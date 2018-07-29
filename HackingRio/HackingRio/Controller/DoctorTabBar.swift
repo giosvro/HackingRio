@@ -25,7 +25,7 @@ class DoctorTabBar: UITabBarController, UITabBarControllerDelegate {
         searchTab.tabBarItem = searchTabItem
         
         //MARK:- Create Tab Schedule
-        let scheduleTab = UIViewController()
+        let scheduleTab = DoctorScheduleVC()
         let scheduleTabItem = UITabBarItem(title: "Agenda", image: UIImage(named: "calendarActive"), selectedImage: UIImage(named: "scheduleInactive"))
         
         scheduleTab.tabBarItem = scheduleTabItem
