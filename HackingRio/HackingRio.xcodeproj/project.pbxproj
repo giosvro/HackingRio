@@ -190,8 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				651BF026210CD5CD0016C4A9 /* HackingRio */,
-				651BF03B210CD5CE0016C4A9 /* HackingRioTests */,
 				651BF046210CD5CE0016C4A9 /* HackingRioUITests */,
+				651BF03B210CD5CE0016C4A9 /* HackingRioTests */,
 				651BF025210CD5CD0016C4A9 /* Products */,
 				DA691F38DB209CAAFEE1F1E2 /* Pods */,
 				671B018411F4E0D59C1B27D6 /* Frameworks */,
