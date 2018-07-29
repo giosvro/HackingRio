@@ -13,7 +13,6 @@ class Appointment: Codable {
     var payment: Payment
     var status: String
     
-    
     init(slot: Slot, payment: Payment, status: String) {
         self.slot = slot
         self.payment = payment
