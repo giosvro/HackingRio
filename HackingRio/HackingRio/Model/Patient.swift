@@ -13,11 +13,11 @@ class Patient: Person {
     var appointment: [Appointment]
     var doctors: [Doctor]
     
-    init(name: String, birth: Date, telephone: String, email: String, cpf: String, bankAccount: BankAccount, adress: String, appointment: [Appointment], doctors: [Doctor]) {
+    init(name: String, age: String, telephone: String, email: String, cpf: String, bankAccount: BankAccount, adress: String, appointment: [Appointment], doctors: [Doctor]) {
         self.adress = adress
         self.appointment = appointment
         self.doctors = doctors
-        super.init(name: name, birth: birth, telephone: telephone, email: email, cpf: cpf, bankAccount: bankAccount)
+        super.init(name: name, age: age, telephone: telephone, email: email, cpf: cpf, bankAccount: bankAccount)
     }
     
     required init(from decoder: Decoder) throws {

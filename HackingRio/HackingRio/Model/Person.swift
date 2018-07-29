@@ -10,16 +10,16 @@ import Foundation
 
 class Person: Codable {
     var name: String
-    var birth: Date
+    var age: String
     var telephone: String
     var email: String
     var cpf: String
     var bankAccount: BankAccount
     
     
-    init(name: String, birth: Date, telephone: String, email: String, cpf: String, bankAccount: BankAccount){
+    init(name: String, age: String, telephone: String, email: String, cpf: String, bankAccount: BankAccount){
         self.name = name
-        self.birth = birth
+        self.age = age
         self.telephone = telephone
         self.email = email
         self.cpf = cpf
