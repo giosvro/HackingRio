@@ -105,7 +105,13 @@
                         <viewLayoutGuide key="safeArea" id="cde-zO-rxc"/>
                     </view>
                     <connections>
+                        <outlet property="crmLabel" destination="xis-p0-1Vx" id="UBH-hu-wIA"/>
+                        <outlet property="emailLabel" destination="tVq-sM-wdn" id="f0J-Ub-sRA"/>
+                        <outlet property="enderecoLabel" destination="h5V-Bp-rka" id="Q9E-Je-Y3a"/>
+                        <outlet property="especialidadeLabel" destination="iX8-ra-isQ" id="BEV-08-Vxi"/>
+                        <outlet property="nameLabel" destination="Ney-BP-9eO" id="NHN-LH-rYq"/>
                         <outlet property="profileImage" destination="pWg-2g-faY" id="I2V-bk-A7O"/>
+                        <outlet property="telefoneLabel" destination="oYe-vU-QrM" id="tyt-y8-bgQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5Q-IX-EKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
