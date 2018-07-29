@@ -20,8 +20,9 @@
 		651BF03D210CD5CE0016C4A9 /* HackingRioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF03C210CD5CE0016C4A9 /* HackingRioTests.swift */; };
 		651BF048210CD5CE0016C4A9 /* HackingRioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */; };
 		65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E66210D1E4000AB847E /* HomeTabBar.swift */; };
-		65CC9E69210D20EC00AB847E /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E68210D20EC00AB847E /* SearchTab.swift */; };
 		65CC9E6D210DB5BB00AB847E /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9E6C210DB5BB00AB847E /* SearchView.storyboard */; };
+		65CC9E6F210DBCC600AB847E /* TabSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E6E210DBCC600AB847E /* TabSearchViewController.swift */; };
+		65CC9E71210DC84300AB847E /* DisponibilidadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E70210DC84300AB847E /* DisponibilidadeViewController.swift */; };
 		683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E6272210D76FC00C6AA64 /* UIColor.swift */; };
 		6883EB6F210D7CCB0072D173 /* DoctorScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */; };
 		6883EB73210D7F730072D173 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB72210D7F730072D173 /* CalendarCollectionView.swift */; };
@@ -88,8 +89,9 @@
 		651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingRioUITests.swift; sourceTree = "<group>"; };
 		651BF049210CD5CE0016C4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CC9E66210D1E4000AB847E /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
-		65CC9E68210D20EC00AB847E /* SearchTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
 		65CC9E6C210DB5BB00AB847E /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		65CC9E6E210DBCC600AB847E /* TabSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSearchViewController.swift; sourceTree = "<group>"; };
+		65CC9E70210DC84300AB847E /* DisponibilidadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisponibilidadeViewController.swift; sourceTree = "<group>"; };
 		683E6272210D76FC00C6AA64 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleVC.swift; sourceTree = "<group>"; };
 		6883EB72210D7F730072D173 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,8 @@
 				3BBF327A210D7B1B00B32596 /* DoctorProfileVC.swift */,
 				962B389A210D886500BF6318 /* DoctorTabBar.swift */,
 				962B389F210D8CD000BF6318 /* PatientFavoriteVC.swift */,
+				65CC9E6E210DBCC600AB847E /* TabSearchViewController.swift */,
+				65CC9E70210DC84300AB847E /* DisponibilidadeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -510,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				962B389C210D8B3200BF6318 /* Doctor.swift in Sources */,
+				65CC9E71210DC84300AB847E /* DisponibilidadeViewController.swift in Sources */,
 				6883EB73210D7F730072D173 /* CalendarCollectionView.swift in Sources */,
 				968189FE210D1E1000E6C7DC /* Clinic.swift in Sources */,
 				6883EB6F210D7CCB0072D173 /* DoctorScheduleVC.swift in Sources */,
@@ -529,6 +534,7 @@
 				683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */,
 				96818A00210D20B400E6C7DC /* Payment.swift in Sources */,
 				962B38A2210D95EC00BF6318 /* PatientFavoriteCell.swift in Sources */,
+				65CC9E6F210DBCC600AB847E /* TabSearchViewController.swift in Sources */,
 				968189FC210CE7B100E6C7DC /* Patient.swift in Sources */,
 				96818A04210D4BA500E6C7DC /* StandardVC.swift in Sources */,
 				962B3898210D7AA500BF6318 /* SearchTab.swift in Sources */,
