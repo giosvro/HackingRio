@@ -10,7 +10,7 @@ import UIKit
 
 class SearchTabVC: UITableViewController, UISearchBarDelegate{
     
-  static var  favoriteDoctor: [Doctor] = [Doctor(crm: "1111", picture: "", priceCharged: 300, specialty: "Cardio", id: "222", slots: [Slot(timePerSlot: 30, date: .init(), clinic: Clinic(neighborhood: "Barra", adress: "Pedra da Barra"))], name: "Simone Araújo", age: "34", telephone: "999999", email: "simone@email.com", cpf: "123456789", bankAccount: BankAccount(bank: "Bradesco", account: "1234", agency: "1234"))]
+  static var  favoriteDoctor: [Doctor] = [Doctor(crm: "1111", picture: "", priceCharged: 300, specialty: "Cardio", id: "222", slots: [Slot(timePerSlot: 30, date: .init(), clinic: Clinic(neighborhood: "Barra", adress: "Pedra da Barra"))], name: "Simone Araújo", age: "34", telephone: "999999", email: "simone@email.com", cpf: "123456789", bankAccount: BankAccount(bank: "Bradesco", account: "1234", agency: "1234")), Doctor(crm: "2222", picture: "", priceCharged: 500, specialty: "Otorrino", id: "333", slots: [Slot(timePerSlot: 45, date: .init(), clinic: Clinic(neighborhood: "Gavea", adress: "Marquês de São Vicente"))], name: "Julia Maria", age: "25", telephone: "33221122", email: "jm@gmail.com", cpf: "111.111.222.2222", bankAccount: BankAccount(bank: "Itau", account: "1111", agency: "2222"))]
     
     var filteredData = [Doctor]()
     
