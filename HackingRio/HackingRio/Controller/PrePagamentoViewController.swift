@@ -60,6 +60,9 @@ class PrePagamentoViewController: UIViewController {
         self.pagamentoView.layer.addSublayer(pagamentoViewBorder)
         self.pagamentoView.layer.masksToBounds = true
         // Do any additional setup after loading the view.
+        dataLabel.text = DisponibilidadeViewController.diaDeAtendimento
+        horaLabel.text = DisponibilidadeDeHorarioViewController.horaDeAtendimento
+        enderecoLabel.text = SearchTabVC.favoriteDoctor[0].slots[0].clinic.adress
     }
 
     override func didReceiveMemoryWarning() {
