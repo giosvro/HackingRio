@@ -20,9 +20,11 @@
 		651BF03D210CD5CE0016C4A9 /* HackingRioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF03C210CD5CE0016C4A9 /* HackingRioTests.swift */; };
 		651BF048210CD5CE0016C4A9 /* HackingRioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */; };
 		65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E66210D1E4000AB847E /* HomeTabBar.swift */; };
-		65CC9E69210D20EC00AB847E /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E68210D20EC00AB847E /* SearchTab.swift */; };
+		683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E6272210D76FC00C6AA64 /* UIColor.swift */; };
 		881DFF0431D6B4F9B48F9716 /* Pods_HackingRioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99A837C685B3F8B9E210547 /* Pods_HackingRioTests.framework */; };
 		962B3892210D57D700BF6318 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3891210D57D700BF6318 /* Appointment.swift */; };
+		962B3894210D668B00BF6318 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3893210D668B00BF6318 /* LoginVC.swift */; };
+		962B3898210D7AA500BF6318 /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3897210D7AA500BF6318 /* SearchTab.swift */; };
 		968189F8210CE73E00E6C7DC /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189F7210CE73E00E6C7DC /* Slot.swift */; };
 		968189FC210CE7B100E6C7DC /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189FB210CE7B100E6C7DC /* Patient.swift */; };
 		968189FE210D1E1000E6C7DC /* Clinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189FD210D1E1000E6C7DC /* Clinic.swift */; };
@@ -72,10 +74,12 @@
 		651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingRioUITests.swift; sourceTree = "<group>"; };
 		651BF049210CD5CE0016C4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CC9E66210D1E4000AB847E /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
-		65CC9E68210D20EC00AB847E /* SearchTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
+		683E6272210D76FC00C6AA64 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D17B1A55027C151666358F /* Pods_HackingRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		962B3891210D57D700BF6318 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		962B3893210D668B00BF6318 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		962B3897210D7AA500BF6318 /* SearchTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
 		968189F7210CE73E00E6C7DC /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		968189FB210CE7B100E6C7DC /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		968189FD210D1E1000E6C7DC /* Clinic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinic.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				96818A03210D4BA500E6C7DC /* StandardVC.swift */,
+				962B3893210D668B00BF6318 /* LoginVC.swift */,
 				65CC9E66210D1E4000AB847E /* HomeTabBar.swift */,
 				651BF029210CD5CD0016C4A9 /* ViewController.swift */,
 				65CC9E6A210D20F100AB847E /* Search */,
@@ -179,6 +184,8 @@
 		651BF026210CD5CD0016C4A9 /* HackingRio */ = {
 			isa = PBXGroup;
 			children = (
+				962B3899210D7AB800BF6318 /* Search */,
+				683E6271210D76E500C6AA64 /* Extensions */,
 				651BF027210CD5CD0016C4A9 /* AppDelegate.swift */,
 				3B71E376210CE09C00AD30AC /* Model */,
 				3B71E377210CE0AB00AD30AC /* View */,
@@ -207,14 +214,6 @@
 			path = HackingRioUITests;
 			sourceTree = "<group>";
 		};
-		65CC9E6A210D20F100AB847E /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				65CC9E68210D20EC00AB847E /* SearchTab.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
 		671B018411F4E0D59C1B27D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +222,23 @@
 				867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		683E6271210D76E500C6AA64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				683E6272210D76FC00C6AA64 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		962B3899210D7AB800BF6318 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				962B3897210D7AA500BF6318 /* SearchTab.swift */,
+			);
+			name = Search;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DA691F38DB209CAAFEE1F1E2 /* Pods */ = {
@@ -460,9 +476,12 @@
 				968189F8210CE73E00E6C7DC /* Slot.swift in Sources */,
 				96818A02210D220600E6C7DC /* BankAccount.swift in Sources */,
 				962B3892210D57D700BF6318 /* Appointment.swift in Sources */,
+				962B3894210D668B00BF6318 /* LoginVC.swift in Sources */,
+				683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */,
 				96818A00210D20B400E6C7DC /* Payment.swift in Sources */,
 				968189FC210CE7B100E6C7DC /* Patient.swift in Sources */,
 				96818A04210D4BA500E6C7DC /* StandardVC.swift in Sources */,
+				962B3898210D7AA500BF6318 /* SearchTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
