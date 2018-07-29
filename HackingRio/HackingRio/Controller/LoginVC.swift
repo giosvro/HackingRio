@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Login: UIViewController {
+class LoginVC: UIViewController {
     let login = UITextField()
     let password = UITextField()
     let button = UIButton()
@@ -68,12 +68,11 @@ class Login: UIViewController {
     }
   
     @objc func buttonAction(sender: UIButton) {
-        if login.text == "doctor@email.com" && password.text == "1234" {
-            print("entrou medico")
-//            self.present(HomeTabBar, animated: true, completion: nil)
+        if login.text == "Doctor@email.com" && password.text == "1234" {
+            let navigationController = UINavigationController(rootViewController: DoctorTabBar())
+            self.present(navigationController, animated: true, completion: nil)
         }
-        if login.text == "patient@email.com" && password.text == "5678" {
-            print("entrou paciente")
+        if login.text == "Patient@email.com" && password.text == "5678" {
             let navigationController = UINavigationController(rootViewController: HomeTabBar())
             self.present(navigationController, animated: true, completion: nil)
         }
