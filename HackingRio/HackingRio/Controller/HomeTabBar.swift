@@ -19,20 +19,20 @@ class HomeTabBar: UITabBarController, UITabBarControllerDelegate {
         super.viewWillAppear(animated)
         
         //MARK:- Create Tab Search
-        let searchTab = UIViewController()
+        let searchTab = SearchTabViewController()
         let searchTabItem = UITabBarItem(title: "Buscar", image: UIImage(named: "searchActive"), selectedImage: UIImage(named: "searchInactive"))
         
         searchTab.tabBarItem = searchTabItem
         
         //MARK:- Create Tab Schedule
         let scheduleTab = UIViewController()
-        let scheduleTabItem = UITabBarItem(title: "Agenda", image: UIImage(named: "scheduleActive"), selectedImage: UIImage(named: "scheduleInactive"))
+        let scheduleTabItem = UITabBarItem(title: "Agenda", image: UIImage(named: "calendarActive"), selectedImage: UIImage(named: "scheduleInactive"))
         
         scheduleTab.tabBarItem = scheduleTabItem
         
         //MARK:- Create Tab Favorites
         let favoriteTab = UIViewController()
-        let favoriteTabItem = UITabBarItem(title: "Favorito", image: UIImage(named: "featuredActive"), selectedImage: UIImage(named: "featuredInactive"))
+        let favoriteTabItem = UITabBarItem(title: "Favorito", image: UIImage(named: "favoriteActive"), selectedImage: UIImage(named: "favoriteInactive"))
         
         favoriteTab.tabBarItem = favoriteTabItem
         
