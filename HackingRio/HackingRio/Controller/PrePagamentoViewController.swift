@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Stripe
 
-class PrePagamentoViewController: UIViewController {
+class PrePagamentoViewController: UIViewController, STPAddCardViewControllerDelegate {
+    func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
+        
+    }
+    
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var consultaView: UIView!
@@ -21,6 +26,16 @@ class PrePagamentoViewController: UIViewController {
     @IBOutlet weak var marcaLabel: UILabel!
     @IBOutlet weak var numeroLabel: UILabel!
     @IBOutlet weak var confirmarBtn: UIButton!
+    
+    @IBAction func PaymentTapped(_ sender: UIButton) {
+        // Setup add card view controller
+        let addCardViewController = STPAddCardViewController()
+        addCardViewController.delegate = self
+        
+        // Present add card view controller
+        let navigationController = UINavigationController(rootViewController: addCardViewController)
+        present(navigationController, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,16 +65,19 @@ class PrePagamentoViewController: UIViewController {
         confirmarBtn.layer.borderColor = UIColor(hex: "7BCDE8").cgColor
         
         
-        self.pagamentoView.layer.cornerRadius = 23
-        let pagamentoViewBorder = CALayer()
-        let pagamentoViewWidth = CGFloat(3.0)
-        pagamentoViewBorder.borderColor = UIColor(hex: "7BCDE8").cgColor
-        pagamentoViewBorder.frame = CGRect(x: width, y: 0, width: 3, height: self.pagamentoView.frame.size.height)
-        
-        pagamentoViewBorder.borderWidth = pagamentoViewWidth
-        self.pagamentoView.layer.addSublayer(pagamentoViewBorder)
-        self.pagamentoView.layer.masksToBounds = true
+//        self.pagamentoView.layer.cornerRadius = 23
+//        let pagamentoViewBorder = CALayer()
+//        let pagamentoViewWidth = CGFloat(3.0)
+//        pagamentoViewBorder.borderColor = UIColor(hex: "7BCDE8").cgColor
+//        pagamentoViewBorder.frame = CGRect(x: width, y: 0, width: 3, height: self.pagamentoView.frame.size.height)
+//        
+//        pagamentoViewBorder.borderWidth = pagamentoViewWidth
+//        self.pagamentoView.layer.addSublayer(pagamentoViewBorder)
+//        self.pagamentoView.layer.masksToBounds = true
         // Do any additional setup after loading the view.
+        dataLabel.text = DisponibilidadeViewController.diaDeAtendimento
+        horaLabel.text = DisponibilidadeDeHorarioViewController.horaDeAtendimento
+        enderecoLabel.text = SearchTabVC.favoriteDoctor[0].slots[0].clinic.adress
     }
 
     override func didReceiveMemoryWarning() {

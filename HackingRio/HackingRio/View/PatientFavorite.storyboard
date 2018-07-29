@@ -13,7 +13,7 @@
         <!--Patient FavoriteVC-->
         <scene sceneID="Npy-by-rpQ">
             <objects>
-                <viewController id="C76-2Z-tfk" customClass="PatientFavoriteVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchDoc" id="C76-2Z-tfk" customClass="PatientFavoriteVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wxV-rO-O8z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
