@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		05D41D715BD98CDFA3F32CD4 /* Pods_HackingRioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */; };
 		3B71E37A210CE11900AD30AC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71E379210CE11900AD30AC /* Person.swift */; };
-		3B71E37C210CE6CA00AD30AC /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71E37B210CE6CA00AD30AC /* Doctor.swift */; };
 		651BF028210CD5CD0016C4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF027210CD5CD0016C4A9 /* AppDelegate.swift */; };
 		651BF02A210CD5CD0016C4A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF029210CD5CD0016C4A9 /* ViewController.swift */; };
 		651BF02D210CD5CD0016C4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651BF02B210CD5CD0016C4A9 /* Main.storyboard */; };
@@ -20,8 +19,8 @@
 		65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E66210D1E4000AB847E /* HomeTabBar.swift */; };
 		65CC9E69210D20EC00AB847E /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E68210D20EC00AB847E /* SearchTab.swift */; };
 		881DFF0431D6B4F9B48F9716 /* Pods_HackingRioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99A837C685B3F8B9E210547 /* Pods_HackingRioTests.framework */; };
+		962B3892210D57D700BF6318 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3891210D57D700BF6318 /* Appointment.swift */; };
 		968189F8210CE73E00E6C7DC /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189F7210CE73E00E6C7DC /* Slot.swift */; };
-		968189FA210CE79E00E6C7DC /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189F9210CE79E00E6C7DC /* Appointment.swift */; };
 		968189FC210CE7B100E6C7DC /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189FB210CE7B100E6C7DC /* Patient.swift */; };
 		968189FE210D1E1000E6C7DC /* Clinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189FD210D1E1000E6C7DC /* Clinic.swift */; };
 		96818A00210D20B400E6C7DC /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189FF210D20B400E6C7DC /* Payment.swift */; };
@@ -70,8 +69,8 @@
 		65CC9E68210D20EC00AB847E /* SearchTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
 		867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D17B1A55027C151666358F /* Pods_HackingRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962B3891210D57D700BF6318 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		968189F7210CE73E00E6C7DC /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
-		968189F9210CE79E00E6C7DC /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		968189FB210CE7B100E6C7DC /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		968189FD210D1E1000E6C7DC /* Clinic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinic.swift; sourceTree = "<group>"; };
 		968189FF210D20B400E6C7DC /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
@@ -117,7 +116,7 @@
 				3B71E379210CE11900AD30AC /* Person.swift */,
 				3B71E37B210CE6CA00AD30AC /* Doctor.swift */,
 				968189F7210CE73E00E6C7DC /* Slot.swift */,
-				968189F9210CE79E00E6C7DC /* Appointment.swift */,
+				962B3891210D57D700BF6318 /* Appointment.swift */,
 				968189FB210CE7B100E6C7DC /* Patient.swift */,
 				968189FD210D1E1000E6C7DC /* Clinic.swift */,
 				968189FF210D20B400E6C7DC /* Payment.swift */,
@@ -440,17 +439,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B71E37C210CE6CA00AD30AC /* Doctor.swift in Sources */,
 				968189FE210D1E1000E6C7DC /* Clinic.swift in Sources */,
 				65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */,
-				3B71E37C210CE6CA00AD30AC /* Medico.swift in Sources */,
 				65CC9E69210D20EC00AB847E /* SearchTab.swift in Sources */,
 				651BF02A210CD5CD0016C4A9 /* ViewController.swift in Sources */,
-				968189FA210CE79E00E6C7DC /* Appointment.swift in Sources */,
 				3B71E37A210CE11900AD30AC /* Person.swift in Sources */,
 				651BF028210CD5CD0016C4A9 /* AppDelegate.swift in Sources */,
 				968189F8210CE73E00E6C7DC /* Slot.swift in Sources */,
 				96818A02210D220600E6C7DC /* BankAccount.swift in Sources */,
+				962B3892210D57D700BF6318 /* Appointment.swift in Sources */,
 				96818A00210D20B400E6C7DC /* Payment.swift in Sources */,
 				968189FC210CE7B100E6C7DC /* Patient.swift in Sources */,
 				96818A04210D4BA500E6C7DC /* StandardVC.swift in Sources */,
@@ -628,7 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 98PH68S7E9;
 				INFOPLIST_FILE = HackingRio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,7 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 98PH68S7E9;
 				INFOPLIST_FILE = HackingRio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
