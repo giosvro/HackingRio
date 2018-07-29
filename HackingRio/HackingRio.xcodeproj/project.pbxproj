@@ -26,6 +26,7 @@
 		65CC9E6D210DB5BB00AB847E /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9E6C210DB5BB00AB847E /* SearchView.storyboard */; };
 		65CC9E6F210DBCC600AB847E /* TabSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E6E210DBCC600AB847E /* TabSearchViewController.swift */; };
 		65CC9E71210DC84300AB847E /* DisponibilidadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E70210DC84300AB847E /* DisponibilidadeViewController.swift */; };
+		65CC9E73210DDBF600AB847E /* PrePagamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E72210DDBF600AB847E /* PrePagamentoViewController.swift */; };
 		683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E6272210D76FC00C6AA64 /* UIColor.swift */; };
 		6883EB6F210D7CCB0072D173 /* DoctorScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */; };
 		6883EB73210D7F730072D173 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB72210D7F730072D173 /* CalendarCollectionView.swift */; };
@@ -98,6 +99,7 @@
 		65CC9E6C210DB5BB00AB847E /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
 		65CC9E6E210DBCC600AB847E /* TabSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSearchViewController.swift; sourceTree = "<group>"; };
 		65CC9E70210DC84300AB847E /* DisponibilidadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisponibilidadeViewController.swift; sourceTree = "<group>"; };
+		65CC9E72210DDBF600AB847E /* PrePagamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrePagamentoViewController.swift; sourceTree = "<group>"; };
 		683E6272210D76FC00C6AA64 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleVC.swift; sourceTree = "<group>"; };
 		6883EB72210D7F730072D173 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				65CC9E6E210DBCC600AB847E /* TabSearchViewController.swift */,
 				65CC9E70210DC84300AB847E /* DisponibilidadeViewController.swift */,
 				3BBF3280210DC0D200B32596 /* SearchTableViewCell.swift */,
+				65CC9E72210DDBF600AB847E /* PrePagamentoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 			files = (
 				962B389C210D8B3200BF6318 /* Doctor.swift in Sources */,
 				65CC9E71210DC84300AB847E /* DisponibilidadeViewController.swift in Sources */,
+				65CC9E73210DDBF600AB847E /* PrePagamentoViewController.swift in Sources */,
 				6883EB73210D7F730072D173 /* CalendarCollectionView.swift in Sources */,
 				3BBF327D210DB77B00B32596 /* SearchTabVC.swift in Sources */,
 				968189FE210D1E1000E6C7DC /* Clinic.swift in Sources */,

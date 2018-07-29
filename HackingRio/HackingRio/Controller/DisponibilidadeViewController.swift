@@ -25,32 +25,32 @@ class DisponibilidadeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        firstBut.backgroundColor = .blue
+        firstBut.backgroundColor = UIColor(hex: "7BCDE8")
         firstBut.tintColor = UIColor.white
         firstBut.layer.cornerRadius = 5
         firstBut.layer.borderWidth = 1
-        firstBut.layer.borderColor = UIColor.blue.cgColor
+        firstBut.layer.borderColor = UIColor(hex: "7BCDE8").cgColor
         firstBut.layer.cornerRadius = 5
         
-        secondBut.backgroundColor = .blue
+        secondBut.backgroundColor = UIColor(hex: "7BCDE8")
         secondBut.tintColor = UIColor.white
         secondBut.layer.cornerRadius = 5
         secondBut.layer.borderWidth = 1
-        secondBut.layer.borderColor = UIColor.blue.cgColor
+        secondBut.layer.borderColor = UIColor(hex: "7BCDE8").cgColor
         secondBut.layer.cornerRadius = 5
         
-        thirdBut.backgroundColor = .blue
+        thirdBut.backgroundColor = UIColor(hex: "7BCDE8")
         thirdBut.tintColor = UIColor.white
         thirdBut.layer.cornerRadius = 5
         thirdBut.layer.borderWidth = 1
-        thirdBut.layer.borderColor = UIColor.blue.cgColor
+        thirdBut.layer.borderColor = UIColor(hex: "7BCDE8").cgColor
         thirdBut.layer.cornerRadius = 5
         
-        fourthBut.backgroundColor = .blue
+        fourthBut.backgroundColor = UIColor(hex: "7BCDE8")
         fourthBut.tintColor = UIColor.white
         fourthBut.layer.cornerRadius = 5
         fourthBut.layer.borderWidth = 1
-        fourthBut.layer.borderColor = UIColor.blue.cgColor
+        fourthBut.layer.borderColor = UIColor(hex: "7BCDE8").cgColor
         fourthBut.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
