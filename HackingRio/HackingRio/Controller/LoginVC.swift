@@ -70,12 +70,12 @@ class Login: UIViewController {
     @objc func buttonAction(sender: UIButton) {
         if login.text == "doctor@email.com" && password.text == "1234" {
             print("entrou medico")
+//            self.present(HomeTabBar, animated: true, completion: nil)
         }
         if login.text == "patient@email.com" && password.text == "5678" {
             print("entrou paciente")
+            let navigationController = UINavigationController(rootViewController: HomeTabBar())
+            self.present(navigationController, animated: true, completion: nil)
         }
     }
-
-    
-    
 }
