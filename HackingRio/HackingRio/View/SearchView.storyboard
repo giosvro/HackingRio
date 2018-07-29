@@ -43,7 +43,7 @@
                                             <constraint firstAttribute="height" constant="30" id="ReC-Lb-SRl"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="Gqw-EV-DmR" kind="show" id="dQ2-WT-kbF"/>
+                                            <segue destination="sbj-qt-MV1" kind="show" id="to4-U3-vKy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -87,54 +87,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWM-Lk-3jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1148" y="-696"/>
+            <point key="canvasLocation" x="-572" y="-12"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="SVz-PJ-UuR">
+        <!--NavigationCell-->
+        <scene sceneID="BGN-QK-1PD">
             <objects>
-                <navigationController id="Gqw-EV-DmR" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ndu-BO-hS8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nJW-9i-Pme">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="jH8-T4-WmL" kind="push" id="O2R-To-t9n"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="44I-00-OSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="SearchTab" referencedIdentifier="NavigationCell" id="sbj-qt-MV1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Slv-wy-d19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-321" y="-697"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="HqM-JR-VB0">
-            <objects>
-                <viewControllerPlaceholder id="jH8-T4-WmL" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="UN4-db-VVu"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kjz-9U-asB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="839" y="-697"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="UfJ-am-bAQ">
-            <objects>
-                <viewController id="ANn-ME-9zn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fUx-cA-IhE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="fvP-bG-De8"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H6a-Au-BF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="148" y="453"/>
+            <point key="canvasLocation" x="317" y="-13"/>
         </scene>
         <!--Disponibilidade View Controller-->
         <scene sceneID="qTJ-yR-lmB">
             <objects>
-                <viewController id="SWj-tn-yvd" customClass="DisponibilidadeViewController" customModule="HackingRio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChoseDay2" id="SWj-tn-yvd" customClass="DisponibilidadeViewController" customModule="HackingRio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y54-xz-wHB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,9 +112,8 @@
                                 </constraints>
                                 <state key="normal" title="10 de Novembro"/>
                                 <connections>
-                                    <action selector="firstButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="to6-25-9lF"/>
-                                    <action selector="firstButton:" destination="8cb-fc-fTC" eventType="touchUpInside" id="yY2-u4-IkB"/>
-                                    <segue destination="sB3-NZ-dEZ" kind="push" id="GvP-4i-LH9"/>
+                                    <action selector="firstButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="cbT-GP-TNJ"/>
+                                    <segue destination="sB3-NZ-dEZ" kind="push" id="RSI-8d-EGx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsK-0g-ebZ">
@@ -158,9 +123,8 @@
                                 </constraints>
                                 <state key="normal" title="11 de Novembro"/>
                                 <connections>
-                                    <action selector="secondButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="9to-q2-Zwy"/>
-                                    <action selector="secondButton:" destination="8cb-fc-fTC" eventType="touchUpInside" id="x9e-Ec-ety"/>
-                                    <segue destination="sB3-NZ-dEZ" kind="push" id="iuL-ek-svE"/>
+                                    <action selector="secondButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="E29-p6-mgw"/>
+                                    <segue destination="sB3-NZ-dEZ" kind="push" id="TaN-Fw-7Vm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDm-YF-jVy">
@@ -170,9 +134,8 @@
                                 </constraints>
                                 <state key="normal" title="13 de Novembro"/>
                                 <connections>
-                                    <action selector="thirdButton:" destination="8cb-fc-fTC" eventType="touchUpInside" id="Zsq-ZW-pqb"/>
-                                    <action selector="thirdButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="dGe-J3-JC1"/>
-                                    <segue destination="sB3-NZ-dEZ" kind="push" id="JNk-zh-VTg"/>
+                                    <action selector="thirdButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="o6c-AP-PRO"/>
+                                    <segue destination="sB3-NZ-dEZ" kind="push" id="OYZ-fO-gk8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultório Bairro 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-Xx-Be9">
@@ -200,9 +163,8 @@
                                 </constraints>
                                 <state key="normal" title="18 de Novembro"/>
                                 <connections>
-                                    <action selector="fourthButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="KLZ-ff-cGK"/>
-                                    <action selector="fourthButton:" destination="8cb-fc-fTC" eventType="touchUpInside" id="dec-6f-ilj"/>
-                                    <segue destination="sB3-NZ-dEZ" kind="push" id="xF7-vw-OPD"/>
+                                    <action selector="fourthButton:" destination="SWj-tn-yvd" eventType="touchUpInside" id="L5Y-VG-bwY"/>
+                                    <segue destination="sB3-NZ-dEZ" kind="push" id="iSE-hT-0cN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -230,14 +192,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="roc-RD-Qyj"/>
                     <connections>
-                        <outlet property="firstBut" destination="jfy-h6-t2a" id="xw4-pP-cNB"/>
-                        <outlet property="fourthBut" destination="xLr-vs-6VH" id="2Gs-yM-XFD"/>
-                        <outlet property="secondBut" destination="IsK-0g-ebZ" id="sHa-z3-Ebh"/>
-                        <outlet property="thirdBut" destination="zDm-YF-jVy" id="Ho6-r5-Ukw"/>
+                        <outlet property="firstBut" destination="jfy-h6-t2a" id="gBK-4y-FtH"/>
+                        <outlet property="fourthBut" destination="xLr-vs-6VH" id="UTa-zv-wq2"/>
+                        <outlet property="secondBut" destination="IsK-0g-ebZ" id="cti-mF-N3W"/>
+                        <outlet property="thirdBut" destination="zDm-YF-jVy" id="U3y-oW-Ag0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jt9-IW-tZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="8cb-fc-fTC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1064.8" y="-12.143928035982009"/>
         </scene>
@@ -400,43 +361,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKd-Dj-kay">
-                                <rect key="frame" x="20" y="523" width="335" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ny4-W9-nSX">
-                                        <rect key="frame" x="17" y="48" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-g7-vvJ">
-                                        <rect key="frame" x="17" y="8" width="33" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57Q-UU-BiW">
-                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="540" width="375" height="127"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="b06-8G-sao"/>
+                                    <constraint firstAttribute="height" constant="127" id="b06-8G-sao"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Confirmar"/>
+                                <connections>
+                                    <action selector="PaymentTapped:" destination="XMu-wN-kUq" eventType="touchUpInside" id="WAD-u0-WH4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGm-lS-VHa">
                                 <rect key="frame" x="20" y="294" width="54" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pagamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9Y-6Y-TbY">
-                                <rect key="frame" x="20" y="494" width="64" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -460,10 +397,7 @@
                         <outlet property="enderecoLabel" destination="Tf2-lH-HGU" id="U3c-DI-C9z"/>
                         <outlet property="horaLabel" destination="y9p-UI-VHm" id="0pR-rw-cra"/>
                         <outlet property="imageView" destination="qFt-wr-hMT" id="fEu-1p-10J"/>
-                        <outlet property="marcaLabel" destination="HIu-g7-vvJ" id="EYo-Kv-Unm"/>
                         <outlet property="nomeLabel" destination="e9b-4A-wLH" id="va4-1A-ADg"/>
-                        <outlet property="numeroLabel" destination="Ny4-W9-nSX" id="986-GM-WfQ"/>
-                        <outlet property="pagamentoView" destination="mKd-Dj-kay" id="o42-WO-lMG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOT-UT-nCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -476,6 +410,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h5U-X0-1Op"/>
-        <segue reference="JNk-zh-VTg"/>
+        <segue reference="OYZ-fO-gk8"/>
     </inferredMetricsTieBreakers>
 </document>

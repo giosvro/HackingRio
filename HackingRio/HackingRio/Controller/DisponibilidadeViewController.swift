@@ -13,11 +13,11 @@ class DisponibilidadeViewController: UIViewController {
     static var diaDeAtendimento: String!
     
     @IBOutlet weak var firstBut: UIButton!
-    @IBOutlet weak var secondBut: UIButton!
-    @IBOutlet weak var thirdBut: UIButton!
+    
     @IBOutlet weak var fourthBut: UIButton!
-    @IBAction func firstButton(_ sender: Any) {
-        DisponibilidadeViewController.diaDeAtendimento = firstBut.titleLabel?.text
+    @IBOutlet weak var thirdBut: UIButton!
+    @IBOutlet weak var secondBut: UIButton!
+    @IBAction func firstButton(_ sender: Any) {        DisponibilidadeViewController.diaDeAtendimento = firstBut.titleLabel?.text
         print(firstBut.titleLabel?.text)
     }
     @IBAction func secondButton(_ sender: Any) {
@@ -31,8 +31,8 @@ class DisponibilidadeViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        firstBut.backgroundColor = UIColor(hex: "7BCDE8")
+        
+        self.firstBut.backgroundColor = UIColor(hex: "7BCDE8")
         firstBut.tintColor = UIColor.white
         firstBut.layer.cornerRadius = 5
         firstBut.layer.borderWidth = 1
@@ -59,7 +59,11 @@ class DisponibilidadeViewController: UIViewController {
         fourthBut.layer.borderWidth = 1
         fourthBut.layer.borderColor = UIColor(hex: "7BCDE8").cgColor
         fourthBut.layer.cornerRadius = 5
+
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
     }
 
     override func didReceiveMemoryWarning() {

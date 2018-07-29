@@ -96,6 +96,13 @@ class SearchTabVC: UITableViewController, UISearchBarDelegate{
             tableView.reloadData()
         }
     }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let controller = DisponibilidadeViewController()
+//        let test = self.navigationController
+//        self.navigationController?.pushViewController(controller, animated: true)
+//    }
+    
+    
   
     
 
