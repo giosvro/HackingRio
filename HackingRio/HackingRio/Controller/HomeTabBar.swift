@@ -32,7 +32,13 @@ class HomeTabBar: UITabBarController, UITabBarControllerDelegate {
         
         //MARK:- Create Tab Favorites
         let favoriteTab = UIViewController()
-//        let favoriteTabItem = UITabBarItem(title: "Favorito", image: UIImage(named: "), selectedImage: <#T##UIImage?#>)
+        let favoriteTabItem = UITabBarItem(title: "Favorito", image: UIImage(named: "featuredActive"), selectedImage: UIImage(named: "featuredInactive"))
         
+        favoriteTab.tabBarItem = favoriteTabItem
+        
+        let controllers = [searchTab, scheduleTab, favoriteTab]
+        
+        self.viewControllers = controllers
+        self.viewControllers = controllers.map {UINavigationController(rootViewController: $0)}
     }
 }
