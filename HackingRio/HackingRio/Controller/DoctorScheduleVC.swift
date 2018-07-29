@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+//class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+    class DoctorScheduleVC: UIViewController{
 
     var collectionView = UICollectionView()
     override func viewDidLoad() {
@@ -22,8 +23,8 @@ class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollection
         layout.itemSize = CGSize(width: 354 , height: 90)
         collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         
-        collectionView.delegate   = self
-        collectionView.dataSource = self
+//        collectionView.delegate   = self
+//        collectionView.dataSource = self
         collectionView.register(DoctorScheduleCell.self, forCellWithReuseIdentifier: "AppointmentItem")
         self.view.addSubview(collectionView)
         
@@ -39,20 +40,20 @@ class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollection
 //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        <#code#>
 //    }
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return DAO.shared.clinicsArray.count
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return DAO.shared.patientsArray.count
-    }
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+////        return DAO.shared.clinicsArray.count
+//    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+////        return DAO.shared.patientsArray.count
+//    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AppointmentItem", for: indexPath) as! DoctorScheduleCell
-        let patient = DAO.shared.patientsArray[indexPath.item]
-        let appointment = DAO.shared.appointment[indexPath.item]
-        cell.name.text = patient.name
-        cell.age.text = patient.age
+//        let patient = DAO.shared.patientsArray[indexPath.item]
+//        let appointment = DAO.shared.appointment[indexPath.item]
+//        cell.name.text = patient.name
+//        cell.age.text = patient.age
         cell.imageView.image = UIImage(named: "profile")
-        cell.appointmentTime.text = appointment.slot.date
+//        cell.appointmentTime.text = appointment.slot.date
         
         
         return cell
