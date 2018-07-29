@@ -10,13 +10,17 @@ import Foundation
 import UIKit
 
 class DoctorScheduleCell: UICollectionViewCell{
+    @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var name: UILabel!
     var imageView: UIImageView!
-    var name: UILabel!
-    var age: UILabel!
-    var phone: UIButton!
-    var cancel: UIButton!
-    var notifyDelay: UIButton!
-    var appointmentTime: UILabel!
+    @IBOutlet weak var appointmentTime: UILabel!
+    
+    @IBOutlet weak var cancel: UIButton!
+    @IBOutlet weak var phone: UIButton!
+
+    @IBOutlet weak var notifyDelay: UIButton!
+ 
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -27,7 +31,7 @@ class DoctorScheduleCell: UICollectionViewCell{
         name.lineBreakMode = NSLineBreakMode.byTruncatingTail
         name.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(name)
-        
+
         age = UILabel()
         age.font = UIFont(name: "Helvetica-Regular", size: 15)
         age.numberOfLines = 1
@@ -35,7 +39,7 @@ class DoctorScheduleCell: UICollectionViewCell{
         age.translatesAutoresizingMaskIntoConstraints = false
 
         self.addSubview(age)
-        
+
         phone = UIButton()
         phone.titleLabel?.font = UIFont(name: "Helvetica-Regular", size: 15)
         phone.titleLabel?.textColor = UIColor(hex: "F7F0F0")
@@ -43,7 +47,7 @@ class DoctorScheduleCell: UICollectionViewCell{
         phone.translatesAutoresizingMaskIntoConstraints = false
 
         self.addSubview(phone)
-        
+
         appointmentTime = UILabel()
         appointmentTime.font = UIFont(name: "Helvetica-Bold", size: 16)
         appointmentTime.textColor = UIColor(hex: "7BCDE8")

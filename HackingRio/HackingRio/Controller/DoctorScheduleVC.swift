@@ -12,9 +12,10 @@ import UIKit
 //class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     class DoctorScheduleVC: UIViewController{
 
-    var collectionView = UICollectionView()
+    var collectionView:UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        collectionView = UICollectionView()
         
         //MARK: Collection View Layout
@@ -31,7 +32,7 @@ import UIKit
         //MARK: Collection View Constraints
         
         
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
         collectionView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 130).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         collectionView.widthAnchor.constraint(equalToConstant: self.view.frame.size.width).isActive = true
@@ -54,7 +55,6 @@ import UIKit
 //        cell.age.text = patient.age
         cell.imageView.image = UIImage(named: "profile")
 //        cell.appointmentTime.text = appointment.slot.date
-        
         
         return cell
     }

@@ -13,6 +13,7 @@ class HomeTabBar: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,7 +26,9 @@ class HomeTabBar: UITabBarController, UITabBarControllerDelegate {
         searchTab.tabBarItem = searchTabItem
         
         //MARK:- Create Tab Schedule
-        let scheduleTab = UIViewController()
+        let storyboard = UIStoryboard(name: "DoctorScheduleStoryboard", bundle: nil)
+        let scheduleTab = storyboard.instantiateViewController(withIdentifier: "DoctorScheduleVC") as! DoctorScheduleVC
+//        let scheduleTab = DoctorScheduleVC()
         let scheduleTabItem = UITabBarItem(title: "Agenda", image: UIImage(named: "calendarActive"), selectedImage: UIImage(named: "scheduleInactive"))
         
         scheduleTab.tabBarItem = scheduleTabItem

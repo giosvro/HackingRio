@@ -23,12 +23,16 @@
 		651BF03D210CD5CE0016C4A9 /* HackingRioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF03C210CD5CE0016C4A9 /* HackingRioTests.swift */; };
 		651BF048210CD5CE0016C4A9 /* HackingRioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */; };
 		65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E66210D1E4000AB847E /* HomeTabBar.swift */; };
+		65CC9E69210D20EC00AB847E /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E68210D20EC00AB847E /* SearchTab.swift */; };
+		65CC9E6D210DB5BB00AB847E /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9E6C210DB5BB00AB847E /* SearchView.storyboard */; };
 		683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E6272210D76FC00C6AA64 /* UIColor.swift */; };
 		6883EB6F210D7CCB0072D173 /* DoctorScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */; };
 		6883EB73210D7F730072D173 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB72210D7F730072D173 /* CalendarCollectionView.swift */; };
 		6883EB75210D81210072D173 /* DoctorScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6883EB74210D81210072D173 /* DoctorScheduleStoryboard.storyboard */; };
 		6883EB77210D8C300072D173 /* DoctorScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB76210D8C300072D173 /* DoctorScheduleCell.swift */; };
 		6883EB79210D8DFA0072D173 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB78210D8DFA0072D173 /* DAO.swift */; };
+		6883EB7B210DB3F80072D173 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6883EB7A210DB3F80072D173 /* TabBar.storyboard */; };
+		6883EB7D210DB6190072D173 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6883EB7C210DB6190072D173 /* LogIn.storyboard */; };
 		881DFF0431D6B4F9B48F9716 /* Pods_HackingRioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99A837C685B3F8B9E210547 /* Pods_HackingRioTests.framework */; };
 		962B3892210D57D700BF6318 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3891210D57D700BF6318 /* Appointment.swift */; };
 		962B3894210D668B00BF6318 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3893210D668B00BF6318 /* LoginVC.swift */; };
@@ -90,12 +94,16 @@
 		651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingRioUITests.swift; sourceTree = "<group>"; };
 		651BF049210CD5CE0016C4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CC9E66210D1E4000AB847E /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		65CC9E68210D20EC00AB847E /* SearchTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
+		65CC9E6C210DB5BB00AB847E /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
 		683E6272210D76FC00C6AA64 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleVC.swift; sourceTree = "<group>"; };
 		6883EB72210D7F730072D173 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
 		6883EB74210D81210072D173 /* DoctorScheduleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DoctorScheduleStoryboard.storyboard; sourceTree = "<group>"; };
 		6883EB76210D8C300072D173 /* DoctorScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleCell.swift; sourceTree = "<group>"; };
 		6883EB78210D8DFA0072D173 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		6883EB7A210DB3F80072D173 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		6883EB7C210DB6190072D173 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D17B1A55027C151666358F /* Pods_HackingRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		962B3891210D57D700BF6318 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
@@ -165,9 +173,12 @@
 			isa = PBXGroup;
 			children = (
 				651BF02B210CD5CD0016C4A9 /* Main.storyboard */,
+				6883EB7C210DB6190072D173 /* LogIn.storyboard */,
+				6883EB7A210DB3F80072D173 /* TabBar.storyboard */,
 				3BBF3274210D606D00B32596 /* Payment.storyboard */,
 				6883EB74210D81210072D173 /* DoctorScheduleStoryboard.storyboard */,
 				651BF030210CD5CE0016C4A9 /* LaunchScreen.storyboard */,
+				65CC9E6C210DB5BB00AB847E /* SearchView.storyboard */,
 				3BBF3276210D776900B32596 /* DoctorProfile.storyboard */,
 				962B389D210D8C7300BF6318 /* PatientFavorite.storyboard */,
 				3BBF327E210DB7B500B32596 /* SearchTab.storyboard */,
@@ -401,10 +412,13 @@
 				3BBF327F210DB7B500B32596 /* SearchTab.storyboard in Resources */,
 				962B389E210D8C7300BF6318 /* PatientFavorite.storyboard in Resources */,
 				651BF032210CD5CE0016C4A9 /* LaunchScreen.storyboard in Resources */,
+				65CC9E6D210DB5BB00AB847E /* SearchView.storyboard in Resources */,
 				651BF02F210CD5CE0016C4A9 /* Assets.xcassets in Resources */,
 				6883EB75210D81210072D173 /* DoctorScheduleStoryboard.storyboard in Resources */,
+				6883EB7B210DB3F80072D173 /* TabBar.storyboard in Resources */,
 				651BF02D210CD5CD0016C4A9 /* Main.storyboard in Resources */,
 				3BBF3275210D606D00B32596 /* Payment.storyboard in Resources */,
+				6883EB7D210DB6190072D173 /* LogIn.storyboard in Resources */,
 				3BBF3277210D776900B32596 /* DoctorProfile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
