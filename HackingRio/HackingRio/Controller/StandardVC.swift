@@ -14,12 +14,13 @@ class StandardVC: UIViewController, STPAddCardViewControllerDelegate {
     @IBOutlet weak var msgBox: UITextView!
     
     
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Standard"
         msgBox.text = ""
         
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func PaymentTapped(_ sender: UIButton) {
@@ -32,8 +33,6 @@ class StandardVC: UIViewController, STPAddCardViewControllerDelegate {
         present(navigationController, animated: true)
     }
     
-    // MARK: STPAddCardViewControllerDelegate
-    
     func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
         // Dismiss add card view controller
         dismiss(animated: true)
@@ -45,26 +44,9 @@ class StandardVC: UIViewController, STPAddCardViewControllerDelegate {
         print("Printing Strip response:\(token.allResponseFields)\n\n")
         print("Printing Strip Token:\(token.tokenId)")
         
-        msgBox.text = "Sua consulta foi marcada! \nEnviaremos uma notificação próximo a data. \nQualquer imprevisto, lembre-se de cancelar :))"
+        msgBox?.text = "Sua consulta foi marcada! \nEnviaremos uma notificação próximo a data. \nQualquer imprevisto, lembre-se de cancelar :))"
 //        "Transaction success! \n\nHere is the Token: \(token.tokenId)\nCard Type: \(token.card!.funding.rawValue)\n\nSend this token or detail to your backend server to complete this payment."
         
-        
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
