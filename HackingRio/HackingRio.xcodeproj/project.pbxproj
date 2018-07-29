@@ -17,6 +17,8 @@
 		651BF032210CD5CE0016C4A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651BF030210CD5CE0016C4A9 /* LaunchScreen.storyboard */; };
 		651BF03D210CD5CE0016C4A9 /* HackingRioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF03C210CD5CE0016C4A9 /* HackingRioTests.swift */; };
 		651BF048210CD5CE0016C4A9 /* HackingRioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */; };
+		65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E66210D1E4000AB847E /* HomeTabBar.swift */; };
+		65CC9E69210D20EC00AB847E /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E68210D20EC00AB847E /* SearchTab.swift */; };
 		881DFF0431D6B4F9B48F9716 /* Pods_HackingRioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99A837C685B3F8B9E210547 /* Pods_HackingRioTests.framework */; };
 		968189F8210CE73E00E6C7DC /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189F7210CE73E00E6C7DC /* Slot.swift */; };
 		968189FA210CE79E00E6C7DC /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968189F9210CE79E00E6C7DC /* Appointment.swift */; };
@@ -64,6 +66,8 @@
 		651BF043210CD5CE0016C4A9 /* HackingRioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackingRioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingRioUITests.swift; sourceTree = "<group>"; };
 		651BF049210CD5CE0016C4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CC9E66210D1E4000AB847E /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		65CC9E68210D20EC00AB847E /* SearchTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
 		867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D17B1A55027C151666358F /* Pods_HackingRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		968189F7210CE73E00E6C7DC /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				96818A03210D4BA500E6C7DC /* StandardVC.swift */,
+				65CC9E66210D1E4000AB847E /* HomeTabBar.swift */,
+				65CC9E6A210D20F100AB847E /* Search */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +197,14 @@
 				651BF049210CD5CE0016C4A9 /* Info.plist */,
 			);
 			path = HackingRioUITests;
+			sourceTree = "<group>";
+		};
+		65CC9E6A210D20F100AB847E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				65CC9E68210D20EC00AB847E /* SearchTab.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		671B018411F4E0D59C1B27D6 /* Frameworks */ = {
@@ -428,6 +442,9 @@
 			files = (
 				3B71E37C210CE6CA00AD30AC /* Doctor.swift in Sources */,
 				968189FE210D1E1000E6C7DC /* Clinic.swift in Sources */,
+				65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */,
+				3B71E37C210CE6CA00AD30AC /* Medico.swift in Sources */,
+				65CC9E69210D20EC00AB847E /* SearchTab.swift in Sources */,
 				651BF02A210CD5CD0016C4A9 /* ViewController.swift in Sources */,
 				968189FA210CE79E00E6C7DC /* Appointment.swift in Sources */,
 				3B71E37A210CE11900AD30AC /* Person.swift in Sources */,
