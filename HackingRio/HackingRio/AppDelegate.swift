@@ -24,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         STPPaymentConfiguration.shared().publishableKey = "pk_test_XHx11oe4zLXs3n6g4xtjTs6r"
         // do any other necessary launch configuration
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let mainViewController = HomeTabBar()
-//        window?.rootViewController = mainViewController
-//        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mainViewController = HomeTabBar()
+        window?.rootViewController = mainViewController
+        window?.makeKeyAndVisible()
                 return true
     }
 
