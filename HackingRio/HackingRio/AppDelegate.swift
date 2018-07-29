@@ -28,6 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainViewController = Login()
         window?.rootViewController = mainViewController
         window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mainViewController = Login()
+        window?.rootViewController = mainViewController
+        window?.makeKeyAndVisible()
                 return true
     }
 
