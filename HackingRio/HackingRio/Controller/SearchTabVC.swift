@@ -10,7 +10,7 @@ import UIKit
 
 class SearchTabVC: UITableViewController, UISearchBarDelegate{
     
-   var  favoriteDoctor: [Doctor] = [Doctor(crm: "1111", picture: "", priceCharged: 300, specialty: "Cardio", id: "222", slots: [Slot(timePerSlot: 30, date: .init(), clinic: Clinic(neighborhood: "Barra", adress: "Pedra da Barra"))], name: "Simone Araújo", age: "34", telephone: "999999", email: "simone@email.com", cpf: "123456789", bankAccount: BankAccount(bank: "Bradesco", account: "1234", agency: "1234"))]
+  static var  favoriteDoctor: [Doctor] = [Doctor(crm: "1111", picture: "", priceCharged: 300, specialty: "Cardio", id: "222", slots: [Slot(timePerSlot: 30, date: .init(), clinic: Clinic(neighborhood: "Barra", adress: "Pedra da Barra"))], name: "Simone Araújo", age: "34", telephone: "999999", email: "simone@email.com", cpf: "123456789", bankAccount: BankAccount(bank: "Bradesco", account: "1234", agency: "1234"))]
     
     var filteredData = [Doctor]()
     
@@ -46,7 +46,7 @@ class SearchTabVC: UITableViewController, UISearchBarDelegate{
             return filteredData.count
         }
 
-        return favoriteDoctor.count
+        return SearchTabVC.favoriteDoctor.count
     }
     
     
@@ -62,7 +62,7 @@ class SearchTabVC: UITableViewController, UISearchBarDelegate{
         }
         else{
             
-            cell.labelViewCell.text = favoriteDoctor[0].name
+            cell.labelViewCell.text = SearchTabVC.favoriteDoctor[0].name
             
         }
         
@@ -89,7 +89,7 @@ class SearchTabVC: UITableViewController, UISearchBarDelegate{
             
             inSearchMode = true
             
-            filteredData = favoriteDoctor.filter({ (doctor) -> Bool in
+            filteredData = SearchTabVC.favoriteDoctor.filter({ (doctor) -> Bool in
                 doctor.name.contains(searchBar.text!)
             })
             
