@@ -19,6 +19,11 @@
 		651BF048210CD5CE0016C4A9 /* HackingRioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF047210CD5CE0016C4A9 /* HackingRioUITests.swift */; };
 		65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9E66210D1E4000AB847E /* HomeTabBar.swift */; };
 		683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E6272210D76FC00C6AA64 /* UIColor.swift */; };
+		6883EB6F210D7CCB0072D173 /* DoctorScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */; };
+		6883EB73210D7F730072D173 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB72210D7F730072D173 /* CalendarCollectionView.swift */; };
+		6883EB75210D81210072D173 /* DoctorScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6883EB74210D81210072D173 /* DoctorScheduleStoryboard.storyboard */; };
+		6883EB77210D8C300072D173 /* DoctorScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB76210D8C300072D173 /* DoctorScheduleCell.swift */; };
+		6883EB79210D8DFA0072D173 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6883EB78210D8DFA0072D173 /* DAO.swift */; };
 		881DFF0431D6B4F9B48F9716 /* Pods_HackingRioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99A837C685B3F8B9E210547 /* Pods_HackingRioTests.framework */; };
 		962B3892210D57D700BF6318 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3891210D57D700BF6318 /* Appointment.swift */; };
 		962B3894210D668B00BF6318 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B3893210D668B00BF6318 /* LoginVC.swift */; };
@@ -71,6 +76,11 @@
 		651BF049210CD5CE0016C4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CC9E66210D1E4000AB847E /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		683E6272210D76FC00C6AA64 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleVC.swift; sourceTree = "<group>"; };
+		6883EB72210D7F730072D173 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
+		6883EB74210D81210072D173 /* DoctorScheduleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DoctorScheduleStoryboard.storyboard; sourceTree = "<group>"; };
+		6883EB76210D8C300072D173 /* DoctorScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScheduleCell.swift; sourceTree = "<group>"; };
+		6883EB78210D8DFA0072D173 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		867F80CB33A4B01366BF81B5 /* Pods_HackingRioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D17B1A55027C151666358F /* Pods_HackingRio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackingRio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		962B3891210D57D700BF6318 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
@@ -120,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				3B71E379210CE11900AD30AC /* Person.swift */,
+				6883EB78210D8DFA0072D173 /* DAO.swift */,
 				3B71E37B210CE6CA00AD30AC /* Doctor.swift */,
 				968189F7210CE73E00E6C7DC /* Slot.swift */,
 				962B3891210D57D700BF6318 /* Appointment.swift */,
@@ -136,6 +147,7 @@
 			children = (
 				651BF02B210CD5CD0016C4A9 /* Main.storyboard */,
 				3BBF3274210D606D00B32596 /* Payment.storyboard */,
+				6883EB74210D81210072D173 /* DoctorScheduleStoryboard.storyboard */,
 				651BF030210CD5CE0016C4A9 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -145,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				96818A03210D4BA500E6C7DC /* StandardVC.swift */,
+				6883EB6E210D7CCB0072D173 /* DoctorScheduleVC.swift */,
+				6883EB72210D7F730072D173 /* CalendarCollectionView.swift */,
+				6883EB76210D8C300072D173 /* DoctorScheduleCell.swift */,
 				962B3893210D668B00BF6318 /* LoginVC.swift */,
 				65CC9E66210D1E4000AB847E /* HomeTabBar.swift */,
 				651BF029210CD5CD0016C4A9 /* ViewController.swift */,
@@ -357,6 +372,7 @@
 			files = (
 				651BF032210CD5CE0016C4A9 /* LaunchScreen.storyboard in Resources */,
 				651BF02F210CD5CE0016C4A9 /* Assets.xcassets in Resources */,
+				6883EB75210D81210072D173 /* DoctorScheduleStoryboard.storyboard in Resources */,
 				651BF02D210CD5CD0016C4A9 /* Main.storyboard in Resources */,
 				3BBF3275210D606D00B32596 /* Payment.storyboard in Resources */,
 			);
@@ -458,15 +474,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6883EB73210D7F730072D173 /* CalendarCollectionView.swift in Sources */,
 				968189FE210D1E1000E6C7DC /* Clinic.swift in Sources */,
+				6883EB6F210D7CCB0072D173 /* DoctorScheduleVC.swift in Sources */,
 				65CC9E67210D1E4000AB847E /* HomeTabBar.swift in Sources */,
 				651BF02A210CD5CD0016C4A9 /* ViewController.swift in Sources */,
 				3B71E37A210CE11900AD30AC /* Person.swift in Sources */,
 				651BF028210CD5CD0016C4A9 /* AppDelegate.swift in Sources */,
 				968189F8210CE73E00E6C7DC /* Slot.swift in Sources */,
+				6883EB77210D8C300072D173 /* DoctorScheduleCell.swift in Sources */,
 				96818A02210D220600E6C7DC /* BankAccount.swift in Sources */,
 				962B3892210D57D700BF6318 /* Appointment.swift in Sources */,
 				962B3894210D668B00BF6318 /* LoginVC.swift in Sources */,
+				6883EB79210D8DFA0072D173 /* DAO.swift in Sources */,
 				683E6273210D76FC00C6AA64 /* UIColor.swift in Sources */,
 				96818A00210D20B400E6C7DC /* Payment.swift in Sources */,
 				968189FC210CE7B100E6C7DC /* Patient.swift in Sources */,
