@@ -16,5 +16,18 @@ class PatientFavoriteCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        self.addSubview(imageCell)
+        name = UILabel()
+        name.font = UIFont(name: "Helvetica-Bold", size: 15)
+        name.numberOfLines = 1
+        name.lineBreakMode = NSLineBreakMode.byTruncatingTail
+        name.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(name)
+        
+        newAppointment = UIButton()
+        newAppointment.backgroundColor = UIColor.black
+        newAppointment.tintColor = UIColor.white
+        self.addSubview(newAppointment)
+        
     }
 }
