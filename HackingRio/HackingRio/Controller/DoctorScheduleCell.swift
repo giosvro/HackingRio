@@ -16,7 +16,11 @@ class DoctorScheduleCell: UICollectionViewCell{
     var phone: UIButton!
     var cancel: UIButton!
     var notifyDelay: UIButton!
+    var appointmentTime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.addSubview(imageView)
+        name = UILabel()
+        
     }
 }

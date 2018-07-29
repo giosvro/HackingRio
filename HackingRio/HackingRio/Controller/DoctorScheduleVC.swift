@@ -44,10 +44,12 @@ class DoctorScheduleVC: UIViewController, UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AppointmentItem", for: indexPath) as! DoctorScheduleCell
         let patient = DAO.shared.patientsArray[indexPath.item]
-        
+        let appointment = DAO.shared.appointment[indexPath.item]
         cell.name.text = patient.name
         cell.age.text = patient.age
         cell.imageView.image = UIImage(named: "profile")
+        cell.appointmentTime.text = appointment.slot.date
+        
         
         return cell
     }
