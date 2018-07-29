@@ -8,10 +8,11 @@
 
 import UIKit
 import Stripe
+import UserNotifications
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder,UIApplicationDelegate,UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -39,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        scheduleNotification()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -53,6 +55,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    public func scheduleNotification() {
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        
+        
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Olá"
+        content.body = "Não esqueça das suas consultas marcadas, entraremos em contato assim que a consulta estiver mais proxima"
+        content.categoryIdentifier = "alarm"
+        content.userInfo = ["customData": "fizzbuzz"]
+        
+                content.sound = UNNotificationSound.default()
+        
+        
+        
+        let pauseAction = UNNotificationAction(identifier: "Pause", title: "Tap to pause your current read session", options: .foreground)
+        
+        let finishAction = UNNotificationAction(identifier: "Finish", title: "Tap to finish your current read session", options: .foreground)
+        
+        let category = UNNotificationCategory(identifier: "alarm", actions: [pauseAction,finishAction], intentIdentifiers: [])
+        
+        //defino quando vou mandar a notificação
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        center.setNotificationCategories([category])
+        center.add(request)
+    }
 
 }
 
