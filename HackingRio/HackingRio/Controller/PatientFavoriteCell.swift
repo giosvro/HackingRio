@@ -15,5 +15,6 @@ class PatientFavoriteCell: UITableViewCell {
     @IBOutlet weak var newAppointment: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
+
     }
 }

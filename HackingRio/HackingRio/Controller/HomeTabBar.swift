@@ -31,7 +31,7 @@ class HomeTabBar: UITabBarController, UITabBarControllerDelegate {
         scheduleTab.tabBarItem = scheduleTabItem
         
         //MARK:- Create Tab Favorites
-        let favoriteTab = UIViewController()
+        let favoriteTab = PatientFavoriteVC()
         let favoriteTabItem = UITabBarItem(title: "Favorito", image: UIImage(named: "favoriteActive"), selectedImage: UIImage(named: "favoriteInactive"))
         
         favoriteTab.tabBarItem = favoriteTabItem
