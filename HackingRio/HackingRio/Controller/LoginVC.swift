@@ -9,10 +9,11 @@
 import UIKit
 
 class LoginVC: UIViewController {
-    let login = UITextField()
-    let password = UITextField()
-    let button = UIButton()
+
+    @IBOutlet weak var login: UITextField!
     
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var password: UITextField!
     let loginView: UIView = {
         let screenSize = UIScreen.main.bounds
         var view = UIView(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height))
