@@ -10,10 +10,10 @@ import Foundation
 
 class Slot: Codable {
     var timePerSlot: Int
-    var date: Date
+    var date: String
     var clinic: Clinic
     
-    init(timePerSlot: Int, date: Date, clinic: Clinic) {
+    init(timePerSlot: Int, date: String, clinic: Clinic) {
         self.timePerSlot = timePerSlot
         self.date = date
         self.clinic = clinic

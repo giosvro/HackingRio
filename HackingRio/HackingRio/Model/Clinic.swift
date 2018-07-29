@@ -9,13 +9,15 @@
 import Foundation
 
 class Clinic: Codable {
+    var neighborhood: String
     var adress: String
     var telephone: String?
     var cnpj: String?
     
-    init(adress: String,
+    init(neighborhood: String, adress: String,
          telephone: String? = nil,
          cnpj: String? = nil) {
+        self.neighborhood = neighborhood
         self.adress = adress
         self.telephone = telephone
         self.cnpj = cnpj

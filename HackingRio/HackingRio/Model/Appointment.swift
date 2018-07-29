@@ -9,14 +9,11 @@
 import Foundation
 
 class Appointment: Codable {
-    var patient: Patient
     var slot: Slot
-    var payment: Double
+    var payment: Payment
     var status: String
     
-    
-    init(patient: Patient, slot: Slot, payment: Double, status: String) {
-        self.patient = patient
+    init(slot: Slot, payment: Payment, status: String) {
         self.slot = slot
         self.payment = payment
         self.status = status

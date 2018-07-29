@@ -16,14 +16,14 @@ class Doctor: Person {
     var id: String
     var slots: [Slot]
     
-    init(crm:String, picture: String, priceCharged: Double, specialty : String, id : String, slots: [Slot], name: String, birth: Date, telephone: String, email: String, cpf: String, bankAccount: BankAccount) {
+    init(crm:String, picture: String, priceCharged: Double, specialty : String, id : String, slots: [Slot], name: String, age: String, telephone: String, email: String, cpf: String, bankAccount: BankAccount) {
         self.crm = crm
         self.picture = picture
         self.priceCharged = priceCharged
         self.specialty = specialty
         self.id = id
         self.slots = slots
-        super.init(name: name, birth: birth, telephone: telephone, email: email, cpf: cpf, bankAccount: bankAccount)
+        super.init(name: name, age: age, telephone: telephone, email: email, cpf: cpf, bankAccount: bankAccount)
     }
     
     required init(from decoder: Decoder) throws {

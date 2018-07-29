@@ -1,19 +1,18 @@
 //
-//  HomeTabBar.swift
+//  DoctorTabBar.swift
 //  HackingRio
 //
-//  Created by Giovanni Severo Barros on 28/07/18.
+//  Created by Julia Maria Santos on 29/07/2018.
 //  Copyright © 2018 Giovanni Severo Barros. All rights reserved.
 //
 
 import UIKit
 
-class HomeTabBar: UITabBarController, UITabBarControllerDelegate {
+class DoctorTabBar: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,15 +25,13 @@ class HomeTabBar: UITabBarController, UITabBarControllerDelegate {
         searchTab.tabBarItem = searchTabItem
         
         //MARK:- Create Tab Schedule
-        let storyboard = UIStoryboard(name: "DoctorScheduleStoryboard", bundle: nil)
-        let scheduleTab = storyboard.instantiateViewController(withIdentifier: "DoctorScheduleVC") as! DoctorScheduleVC
-//        let scheduleTab = DoctorScheduleVC()
+        let scheduleTab = DoctorScheduleVC()
         let scheduleTabItem = UITabBarItem(title: "Agenda", image: UIImage(named: "calendarActive"), selectedImage: UIImage(named: "scheduleInactive"))
         
         scheduleTab.tabBarItem = scheduleTabItem
         
         //MARK:- Create Tab Favorites
-        let favoriteTab = PatientFavoriteVC()
+        let favoriteTab = UIViewController()
         let favoriteTabItem = UITabBarItem(title: "Favorito", image: UIImage(named: "favoriteActive"), selectedImage: UIImage(named: "favoriteInactive"))
         
         favoriteTab.tabBarItem = favoriteTabItem
